@@ -4,3 +4,6 @@ eggs/
 parts/
 src/
 var/
+_test_setuptools
+develop-eggs/
+.mr.developer.cfg
