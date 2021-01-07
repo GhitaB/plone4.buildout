@@ -3,3 +3,50 @@ $ cd plone4.buildout
 $ virtualenv -p2 venv
 $ ./venv/bin/pip install zc.buildout
 $ ./venv/bin/buildout -c buildout.cfg
+
+-------------------------------------------------------------------------------
+$ mkdir /home/ghitabizau/work/tools
+$ cd /home/ghitabizau/work/tools/
+$ virtualenv -p2 .
+$ ./bin/pip install jarn.mkrelease
+
+Add these files in /home/ghitabizau/
+-------------------------------------------------------------------------------
+.mkrelease
+
+[defaults]
+distbase =
+distdefault = eea
+
+[aliases]
+world =
+pypi
+
+
+-------------------------------------------------------------------------------
+.pypirc
+[distutils]
+index-servers =
+ pypi
+
+[pypi]
+repository: https://upload.pypi.org/legacy/
+username: GhitaB
+password:
+
+[eea]
+repository: https://eggrepo.eea.europa.eu/
+username: GhitaB
+password:
+
+
+-------------------------------------------------------------------------------
+
+Release land.copernicus.content:
+
+fish:
+  $ set PATH /home/ghitabizau/work/tools/bin $PATH
+not fish:
+  $ export PATH="$PATH:/home/ghitabizau/work/tools/bin"
+
+$ ./bin/monkey land.copernicus.content
