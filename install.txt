@@ -9,6 +9,7 @@ $ mkdir /home/ghitabizau/work/tools
 $ cd /home/ghitabizau/work/tools/
 $ virtualenv -p2 .
 $ ./bin/pip install jarn.mkrelease
+$ export PATH=$PATH:/~/work/tools/bin/mkrelease
 
 Add these files in /home/ghitabizau/
 -------------------------------------------------------------------------------
