@@ -1,2 +1,2 @@
 # plone4.buildout
-Test
+I use it to release new versions of land.copernicus.content and theme.
