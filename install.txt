@@ -1,3 +1,4 @@
+$ sudo apt-get install libsasl2-dev python-dev libldap2-dev libssl-dev
 $ git clone git@github.com:GhitaB/plone4.buildout.git
 $ cd plone4.buildout
 $ virtualenv -p2 venv
