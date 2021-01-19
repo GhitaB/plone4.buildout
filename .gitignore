@@ -7,3 +7,4 @@ var/
 _test_setuptools
 develop-eggs/
 .mr.developer.cfg
+_eggmonkey.cache
