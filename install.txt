@@ -58,4 +58,5 @@ not fish:
 $ ./bin/monkey land.copernicus.content
 
 4.
-Ignore error, cd land.copernicus.content: $ python setup.py sdist upload -r eea
+Ignore error, cd land.copernicus.content:
+$ ./../../venv/bin/python setup.py sdist upload -r eea
