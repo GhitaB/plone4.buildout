@@ -30,6 +30,7 @@ pypi
 [distutils]
 index-servers =
  pypi
+ eea
 
 [pypi]
 repository: https://upload.pypi.org/legacy/
